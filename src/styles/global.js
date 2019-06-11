@@ -1,8 +1,8 @@
 let container = {
+    margin: 'auto',
     display: 'flex',
     flexFlow: 'wrap',
-    width: '95%',
-    margin: 'auto'
+    width: '95vw'
 }
 
 let navBar = {

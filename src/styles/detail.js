@@ -14,7 +14,8 @@ let image = {
 
 let link = {
     textDecoration: 'none',
-    color: 'grey'
+    color: 'grey',
+    cursor: 'pointer'
 }
 
 export default {

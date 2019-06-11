@@ -1,4 +1,12 @@
+.thirdPart {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
 
+html {
+  margin: auto
+}
 
 @keyframes App-logo-spin {
   from {

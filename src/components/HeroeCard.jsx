@@ -14,9 +14,9 @@ class HeroeCard extends Component {
                     <img src={this.props.thumbnail.path + '.' + this.props.thumbnail.extension} 
                     alt={'Título:' + this.props.name}
                     style={style.card_img}/>
-                    <h1 style={style.card_title}>{this.props.name}</h1>
+                    <h3 style={style.card_title}>{this.props.name}</h3>
                     
-                        {this.props.description && <p style={style.card_description}>{this.props.description}</p>}
+                        {this.props.description && <small style={style.card_description}>{this.props.description}</small>}
                     
                 </Link>
             </div>
