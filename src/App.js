@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Heroes from './components/Heroes.jsx'
 import Navbar from './components/Navbar.jsx'
-import Detail from './components/Detail.jsx'
+import HeroeDetail from './components/HeroeDetail.jsx'
+import Comics from './components/Comics.jsx'
+import ComicDetail from './components/ComicDetail'
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <Navbar/>
       <Switch>
         <Route path="/" component={Heroes} exact/>
-        <Route path="/heroes/:heroeID" component={Detail}/>
+        <Route path="/heroes/:heroeID" component={HeroeDetail}/>
+        <Route path="/comics" component={Comics} exact/>
+        <Route path="/comics/:comicID" component={ComicDetail}/>
       </Switch>
     </BrowserRouter>
   );

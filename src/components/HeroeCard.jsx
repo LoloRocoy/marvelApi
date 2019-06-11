@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import style from '../styles/cardHeroe'
+import style from '../styles/cards'
 import {Link} from 'react-router-dom'
 
 class HeroeCard extends Component {

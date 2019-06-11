@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
-import controller from '../controllers/heroes'
+import controller from '../controllers/comics'
 import style from '../styles/detail'
 import Image from './Image.jsx'
 
 class Detail extends Component {
     constructor(props) {
         super(props)
-        this.id = this.props.match.params.heroeID
+        this.id = this.props.match.params.comicID
         this.state = {}
-        controller.heroeByID(this.id).then(res=>{this.setState(res.data.data.results[0])}).catch(err => {console.error(err)})
+        controller.comicByID(this.id).then(res=>{this.setState(res.data.data.results[0])}).catch(err => {console.error(err)})
     }
     
     render() {

@@ -12,7 +12,7 @@ let navBar = {
     display: 'flex',
     alignItems: 'center',
     position: 'sticky',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     top: 0
 }
 

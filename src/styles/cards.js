@@ -29,10 +29,20 @@ let card_link = {
     color: 'grey'
 }
 
+let card_comic = {
+    width: '22%',
+    margin: '1%',
+    border: '1px solid grey',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'space-between'
+}
+
 export default {
     card_container,
     card_img,
     card_title,
     card_description,
-    card_link
+    card_link,
+    card_comic
 }
