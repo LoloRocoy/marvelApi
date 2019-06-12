@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import style from '../styles/cards'
+import style from '../../styles/cards'
 import {Link} from 'react-router-dom'
 
 class HeroeCard extends Component {
@@ -15,9 +15,7 @@ class HeroeCard extends Component {
                     alt={'Título:' + this.props.name}
                     style={style.card_img}/>
                     <h3 style={style.card_title}>{this.props.name}</h3>
-                    
-                        {this.props.description && <small style={style.card_description}>{this.props.description}</small>}
-                    
+                    {this.props.description && <small style={style.card_description}>{this.props.description}</small>}                    
                 </Link>
             </div>
         )

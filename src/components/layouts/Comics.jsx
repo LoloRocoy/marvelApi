@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import controller from '../controllers/comics'
-import style from '../styles/global'
-import ComicCard from './ComicCard.jsx'
+import controller from '../../controllers/comics'
+import style from '../../styles/global'
+import ComicCard from '../cards/ComicCard.jsx'
 class Comics extends Component {
     constructor(props) {
         super(props)

@@ -2,7 +2,7 @@ import axios from 'axios'
 import config from '../config/API'
 
 let getComics = () => {
-    return axios.get(config.urlBasis + config.comicsUrl + config.apiKey)
+    return axios.get(config.urlBasis + config.comicsList + config.apiKey)
 }
 
 let comicByID = (id) => {

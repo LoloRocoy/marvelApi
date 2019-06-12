@@ -1,7 +1,15 @@
-.thirdPart {
-  width: 33%;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navPart {
+  width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center
 }
 
 html {

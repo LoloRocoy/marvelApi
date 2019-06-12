@@ -1,20 +1,20 @@
 import React, {Component} from 'react'
-import controller from '../controllers/heroes'
-import HeroeCard from './HeroeCard';
-import style from '../styles/global'
+import controller from '../../controllers/stories'
+import StorieCard from '../cards/StorieCard';
+import style from '../../styles/global'
 
-class Heroes extends Component {
+class Stories extends Component {
     constructor(props) {
         super()
         this.state = {
-            heroesList: []
+            storiesList: []
         }
         
-        controller.getHeroes()
+        controller.getStories()
         .then( res => {
             console.log('CONSOLE---', res.data.data.results)
             this.setState({
-                heroesList: res.data.data.results
+                storiesList: res.data.data.results
             })
         })
     }
@@ -22,11 +22,11 @@ class Heroes extends Component {
     render() {
         return (
             <div style={style.container}>
-                {this.state.heroesList.map((item, i) => <HeroeCard key={i} {...item} />)}
+                {this.state.storiesList.map((item, i) => <StorieCard key={i} {...item} />)}
             </div>                
         )
     }
 }
 
 
-export default Heroes
+export default Stories

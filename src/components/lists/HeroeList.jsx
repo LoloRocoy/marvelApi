@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import style from '../styles/detail'
-import controller from '../controllers/tools'
+import style from '../../styles/detail'
+import controller from '../../controllers/tools'
 
 function HeroeList (props) {
     return (
