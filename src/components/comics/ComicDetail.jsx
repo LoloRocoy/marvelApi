@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import controller from '../../controllers/comics'
 import style from '../../styles/detail'
 import Image from '../Image.jsx'
-import HeroeList from '../lists/HeroeList'
-import SerieList from '../lists/SerieList.jsx'
-import StorieList from '../lists/StorieList'
-import EventList from '../lists/EventList'
+import HeroeList from '../heroes/HeroeList'
+import SerieList from '../series/SerieList.jsx'
+import StorieList from '../stories/StorieList'
+import EventList from '../events/EventList'
 
 class Detail extends Component {
     constructor(props) {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import controller from '../../controllers/events'
 import style from '../../styles/global'
-import EventCard from '../cards/EventCard.jsx'
+import EventCard from './EventCard.jsx'
 class Events extends Component {
     constructor(props) {
         super(props)

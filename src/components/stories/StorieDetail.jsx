@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import controller from '../../controllers/stories'
 import style from '../../styles/detail'
-import ComicList from '../lists/ComicList'
-import SerieList from '../lists/SerieList.jsx'
+import ComicList from '../comics/ComicList'
+import SerieList from '../series/SerieList'
 
 class Detail extends Component {
     constructor(props) {

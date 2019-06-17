@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import controller from '../../controllers/heroes'
-import HeroeCard from '../cards/HeroeCard';
+import HeroeCard from './HeroeCard';
 import style from '../../styles/global'
 
 class Heroes extends Component {

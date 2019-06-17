@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import controller from '../../controllers/heroes'
 import style from '../../styles/detail'
 import Image from '../Image.jsx'
-import ComicList from '../lists/ComicList'
-import EventList from '../lists/EventList'
-import SerieList from '../lists/SerieList.jsx'
-import Heroe from '../lists/Heroe'
+import ComicList from '../comics/ComicList'
+import EventList from '../events/EventList'
+import SerieList from '../series/SerieList.jsx'
+import StorieList from '../stories/StorieList'
 
 class Detail extends Component {
     constructor(props) {
@@ -47,7 +47,7 @@ class Detail extends Component {
                         
                         <div style={style.list}>
                             <h4 style={style.titleList}>{this.state.stories.available} Historias Disponibles!</h4>                                     
-                            {this.state.stories.items.map((item, i) => <Heroe key={i} link={item.resourceURI} name={item.name}/>)}
+                            {this.state.stories.items.map((item, i) => <StorieList key={i} link={item.resourceURI} name={item.name}/>)}
                         </div>
                     </div>
                 </div>

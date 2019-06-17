@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Heroes from './components/layouts/Heroes.jsx'
-import Navbar from './components/Navbar.jsx'
-import HeroeDetail from './components/details/HeroeDetail.jsx'
-import Comics from './components/layouts/Comics.jsx'
-import ComicDetail from './components/details/ComicDetail.jsx'
-import Events from './components/layouts/Events.jsx'
-import EventDetail from './components/details/EventDetail.jsx'
-import Stories from './components/layouts/Stories'
-import StorieDetail from './components/details/StorieDetail.jsx'
-import Series from './components/layouts/Series'
-import SerieDetail from './components/details/SerieDetail.jsx'
-import Landing from './components/layouts/Landing.jsx'
+import Navbar from './components/Navbar'
+import Heroes from './components/heroes/Heroes'
+import HeroeDetail from './components/heroes/HeroeDetail'
+import Comics from './components/comics/Comics'
+import ComicDetail from './components/comics/ComicDetail'
+import Events from './components/events/Events'
+import EventDetail from './components/events/EventDetail'
+import Stories from './components/stories/Stories'
+import StorieDetail from './components/stories/StorieDetail'
+import Series from './components/series/Series'
+import SerieDetail from './components/series/SerieDetail'
+import Landing from './components/Landing'
 
 function App() {
   return (
